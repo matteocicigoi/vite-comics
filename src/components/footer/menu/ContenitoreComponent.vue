@@ -8,5 +8,11 @@ export default {
 </script>
 
 <template>
-    <ListaComponent />
+    <div class="menu-footer"><ListaComponent /></div>
 </template>
+<style lang="scss">
+    .menu-footer{
+        height: 370px;
+        padding-top: 45px;
+    }
+</style>

@@ -134,7 +134,7 @@ export default {
 </script>
 
 <template>
-    <ul>
+    <ul class="list-footer">
         <li v-for="element in lista">
             <h2>{{ element.title }}</h2>
             <ul>
@@ -145,3 +145,33 @@ export default {
         </li>
     </ul>
 </template>
+<style lang="scss">
+    .list-footer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: max-content;
+        height: 100%;
+        list-style-type: none;
+        gap: 30px;
+        li {
+            h2{
+                color: white;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+            ul {
+                list-style-type: none;
+                li{
+                    padding: 2px;
+                    a{
+                        text-decoration: none;
+                        color: #959595;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+</style>
