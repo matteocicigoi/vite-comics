@@ -28,18 +28,29 @@ export default {
             list-style-type: none;
 
             li{
-                padding: 18px;
+                padding: 0 18px;
                 text-transform: uppercase;
 
                 &.selected{
                     a{
                         color: #0282F9;
                     }
+                    a::after{
+                        content: '';
+                        display: block;
+                        width: 100%;
+                        height: 5px;
+                        position: absolute;
+                        top: 76px;
+                        background-color: #0282F9;
+                    }
                 }
 
                 a{
                     text-decoration: none;
                     color: black;
+                    position: relative;
+                    line-height: 103px;
                 }
             }
         }
