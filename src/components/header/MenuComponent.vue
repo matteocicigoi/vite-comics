@@ -5,11 +5,12 @@ export default {
             menu : [
                 {
                     name : 'characters',
-                    link : '#'
+                    link : '#',
                 },
                 {
                     name : 'comics',
-                    link : '#'
+                    link : '#',
+                    selected : true
                 },
                 {
                     name : 'movies',
@@ -51,6 +52,6 @@ export default {
 
 <template>
 <ul>
-<li v-for="element in menu"><a :href="element.link">{{ element.name }}</a></li>
+<li v-for="element in menu" :class="{selected : element.selected}"><a :href="element.link">{{ element.name }}</a></li>
 </ul>
 </template>
