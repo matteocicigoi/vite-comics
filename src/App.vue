@@ -20,7 +20,3 @@ export default{
   <MainComponent />
   <FooterComponent />
 </template>
-
-<style scoped lang="scss">
-@use './style/style.scss' as *;
-</style>

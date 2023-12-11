@@ -169,6 +169,9 @@ export default {
                         text-decoration: none;
                         color: #959595;
                         font-size: 14px;
+                        &:hover{
+                            color: #0282F9;
+                        }
                     }
                 }
             }

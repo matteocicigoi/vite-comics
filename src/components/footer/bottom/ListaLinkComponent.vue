@@ -38,12 +38,13 @@ export default {
             </ul>
     </div>
 </template>
-<style lang="scss">
+<style scoped lang="scss">
+@use '/src/style/partials/variables.scss' as *;
     .links{
         display: flex;
         align-items: center;
         h2 {
-            color: #0282F9;
+            color: $text-primary;
             text-transform: uppercase;
             margin-right: 20px;
         }
@@ -54,6 +55,7 @@ export default {
 
             li {
                 padding: 10px;
+                cursor: pointer;
             }
         }
     }

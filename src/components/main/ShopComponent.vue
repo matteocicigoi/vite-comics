@@ -40,7 +40,7 @@ export default {
 </script>
 
 <template>
-    <div>
+    <div class="shop">
         <ul class="list-element">
         <li v-for="element in list">
             <a :href="element.link">
@@ -53,12 +53,17 @@ export default {
     </ul>
     </div>
 </template>
-<style lang="scss">
+<style scoped lang="scss">
+@use '/src/style/partials/variables.scss' as *;
+.shop {
+    background-color: $bg-current;
+    padding: 50px 0;
+}
     .list-element{
         list-style-type: none;
         display: flex;
         justify-content: space-around;
-        width: 1280px;
+        width: $size;
         margin: auto;
         
         li {
@@ -81,7 +86,12 @@ export default {
                 }
                 span {
                     text-transform: uppercase;
-                    color: white;
+                    color: $text-tertiary;
+                }
+            }
+            &:hover {
+                span{
+                    color: $text-secondary;
                 }
             }
         }

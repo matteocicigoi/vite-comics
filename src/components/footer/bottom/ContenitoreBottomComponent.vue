@@ -17,12 +17,13 @@ export default {
         </div>
     </div>
 </template>
-<style lang="scss">
+<style scoped lang="scss">
+@use '/src/style/partials/variables.scss' as *;
     .footer-bottom{
-        background-color: #303030;
+        background-color: $bg-footer;
 
         > div {
-            max-width: 1280px;
+            max-width: $size;
             margin: 0 auto;
             justify-content: space-between;
             align-items: center;

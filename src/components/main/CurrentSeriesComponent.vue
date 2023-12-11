@@ -7,8 +7,9 @@ export default {};
     </div>
 </template>
 <style scoped lang="scss">
+@use '/src/style/partials/variables.scss' as *;
     div {
-        width: 1280px;
+        width: $size;
         transform: translate(-50%, -50%);
         position: absolute;
         top: 400px;
@@ -17,10 +18,10 @@ export default {};
         span {
             text-transform: uppercase;
             font-weight: bold;
-            color: white;
-            background-color: #0282F9;
+            color: $text-tertiary;
+            background-color: $bg-current;
             padding: 15px 30px;
-            font-size: 21px;
+            font-size: $f-size-current;
         }
     }
 </style>
