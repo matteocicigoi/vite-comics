@@ -58,6 +58,8 @@ export default {
         list-style-type: none;
         display: flex;
         justify-content: space-around;
+        width: 1280px;
+        margin: auto;
         
         li {
             a {
